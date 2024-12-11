@@ -39,4 +39,22 @@ The dataset's TSV files were converted into JSON files for easier processing. Th
 
 These files are generated from the filtered dataset and contain metadata about the audio files.
 
+# Whisper Models Performance on Persian Common Voice Corpus
+
+This section presents the evaluation of Whisper models on the Persian subset of the Common Voice Corpus 19.0, using Word Error Rate (WER) as the metric across the train, dev, and test sets. The models vary in size, from the "tiny" model to the "large-v3," with results showing the trade-offs between model size, VRAM usage, and WER.
+
+### Model Performance Summary
+
+| Model       | Parameters | Required VRAM | WER % (Train) | WER % (Dev) | WER % (Test) |
+|-------------|------------|---------------|---------------|-------------|--------------|
+| **tiny**    | 39 M       | ~1 GB         | 245.47        | 159.26      | 301.95       |
+| **base**    | 74 M       | ~1 GB         | 133.43        | 114.87      | 160.40       |
+| **small**   | 244 M      | ~2 GB         | 78.01         | 93.66       | 87.08        |
+| **medium**  | 769 M      | ~5 GB         | 54.86         | 87.52       | 70.35        |
+| **turbo**   | 809 M      | ~6 GB         | 38.50         | 80.41       | 48.76        |
+| **large-v3**| 1550 M     | ~10 GB        | 32.91         | 77.27       | 35.83        |
+
+*Table 1: WER performance of Whisper models on the Persian Common Voice Corpus.*
+
+
 
