@@ -56,5 +56,11 @@ This section presents the evaluation of Whisper models on the Persian Common Voi
 
 *Table 1: WER performance of Whisper models on the Persian Common Voice Corpus.*
 
+### WER Comparison Plot
+
+Below is the plot showing the WER comparison for different models on the test dataset:
+
+![WER Plot](images/wer_plot.jpg)
+
 
 
