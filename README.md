@@ -41,7 +41,7 @@ These files are generated from the filtered dataset and contain metadata about t
 
 # Whisper Models Performance on Persian Common Voice Corpus
 
-This section presents the evaluation of Whisper models on the Persian subset of the Common Voice Corpus 19.0, using Word Error Rate (WER) as the metric across the train, dev, and test sets. The models vary in size, from the "tiny" model to the "large-v3," with results showing the trade-offs between model size, VRAM usage, and WER.
+This section presents the evaluation of Whisper models on the Persian Common Voice Corpus 19.0, using Word Error Rate (WER) as the metric across the train, dev, and test sets. The models vary in size, from the "tiny" model to the "large-v3," with results showing the trade-offs between model size, VRAM usage, and WER.
 
 ### Model Performance Summary
 
