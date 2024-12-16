@@ -1,23 +1,21 @@
 # Whisper Model Evaluation on Persian Language  
 
-This repository contains the results of evaluating Whisper model variations on the Persian language using the **Common Voice Corpus 19.0 - Persian** dataset. The dataset was filtered and analyzed before evaluation, and the results are presented in this repository.  
+This repository contains the results of evaluating Whisper model variations on the Persian language using the **Common Voice Corpus 19.0 - Persian** dataset.
 
 ## Dataset Details  
 
-We utilized the **train**, **dev**, and **test** partitions of the Common Voice Corpus 19.0 - Persian dataset, applying the following filter criterion:
-
-downvotes == 0 and upvotes >= 2
+We utilized the **train**, **dev**, and **test** partitions of the Common Voice Corpus 19.0 - Persian dataset.
 
 
 ### Dataset Sizes  
 
-The dataset sizes, measured by the number of files, before and after filtering are summarized below:  
+The dataset sizes, expressed as the number of files, are summarized below:
 
-| Partition | Number of Files Before Filtering | Number of Files After Filtering |  
-|-----------|-----------------------------------|----------------------------------|  
-| Train     | 29,175                           | 27,869                          |  
-| Dev       | 9,687                            | 8,922                           |  
-| Test      | 10,404                           | 9,121                           |  
+| Partition | Number of Files Before Filtering | 
+|-----------|-----------------------------------| 
+| Train     | 29,175                           |
+| Dev       | 9,687                            |
+| Test      | 10,404                           |
 
 ### Dataset Statistics  
 
@@ -25,9 +23,9 @@ Statistics regarding the lengths of audio files in each partition are as follows
 
 | Partition | Min Length (s) | Max Length (s) | Average Length (s) |  
 |-----------|----------------|----------------|---------------------|  
-| Train     | 0.97           | 10.34          | 3.81               |  
-| Dev       | 1.07           | 10.42          | 4.25               |  
-| Test      | 1.40           | 10.63          | 4.90               |  
+| Train     | 0.97           | 10.42          | 3.83               |  
+| Dev       | 0.99           | 10.42          | 4.28               |  
+| Test      | 1.40           | 24.86          | 4.94               |  
 
 ## JSON Files  
 
@@ -47,12 +45,12 @@ This section presents the evaluation of Whisper models on the Persian Common Voi
 
 | Model       | Parameters | Required VRAM | WER % (Train) | WER % (Dev) | WER % (Test) |
 |-------------|------------|---------------|---------------|-------------|--------------|
-| **tiny**    | 39 M       | ~1 GB         | 245.47        | 159.26      | 301.95       |
-| **base**    | 74 M       | ~1 GB         | 133.43        | 114.87      | 160.40       |
-| **small**   | 244 M      | ~2 GB         | 78.01         | 93.66       | 87.08        |
-| **medium**  | 769 M      | ~5 GB         | 54.86         | 87.52       | 70.35        |
-| **turbo**   | 809 M      | ~6 GB         | 38.50         | 80.41       | 48.76        |
-| **large-v3**| 1550 M     | ~10 GB        | 32.91         | 77.27       | 35.83        |
+| **tiny**    | 39 M       | ~1 GB         | 248.92        | 164.76      | 264.26       |
+| **base**    | 74 M       | ~1 GB         | 134.43        | 116.27      | 150.86       |
+| **small**   | 244 M      | ~2 GB         | 78.12         | 93.69       | 93.24        |
+| **medium**  | 769 M      | ~5 GB         | 55.72         | 87.01       | 81.01        |
+| **turbo**   | 809 M      | ~6 GB         | 38.75         | 79.37       | 62.43        |
+| **large-v3**| 1550 M     | ~10 GB        | 33.29         | 76.12       | 51.53        |
 
 *Table 1: WER performance of Whisper models on the Persian Common Voice Corpus.*
 
